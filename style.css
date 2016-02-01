@@ -1,0 +1,85 @@
+@keyframes scroll-top-animation {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: -140px;
+    }
+}
+
+.scroll-top {
+    animation-name: scroll-top-animation;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.06,.79,.67,.98);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #bdc3c7;
+}
+
+.wall {
+    position: relative;
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    position: absolute;
+    width: 600px;
+    height: 140px;
+    top: 50%;
+    margin-top: -70px;
+    background-color: #bdc3c7;
+    color: #2c3e50;
+    font-size: 91px;
+    font-family: 'Ubuntu';
+    text-align: center;
+    line-height: 140px;
+}
+
+.cell {
+    height: 140px;
+    width: 190px;
+    float: left;
+    border-radius: 15px;
+    overflow: hidden;
+    background-image: -moz-linear-gradient(
+        rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 95%
+    );
+    background-image: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 95%
+    );
+}
+
+.wrap {
+    height: 280px;
+    width: 190px;
+}
+
+.wrap div {
+    height: 140px;
+    width: 190px;
+    background-color: #ecf0f1;
+}
+
+.separator {
+    width: 15px;
+    height: 100%;
+    float: left;
+    background-color: #bdc3c7;
+    /*border: 1px solid #bdc3c7;*/
+}
