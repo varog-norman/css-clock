@@ -48,6 +48,7 @@ body {
     font-size: 91px;
     text-align: center;
     line-height: 140px;
+    font-family: "Ubuntu";
 }
 
 .cell {
@@ -56,12 +57,7 @@ body {
     float: left;
     border-radius: 15px;
     overflow: hidden;
-    background-image: -moz-linear-gradient(
-        rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 95%
-    );
-    background-image: -webkit-linear-gradient(
-        rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 95%
-    );
+    box-shadow: 0 1px 2px #7f8c8d;
 }
 
 .wrap {

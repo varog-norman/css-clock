@@ -44,5 +44,5 @@ function animate(elem) {
     setTimeout( () => {
         elem.classList.toggle('scroll-top');
         checkTime();
-    }, 999)
+    }, 996)
 }
