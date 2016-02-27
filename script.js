@@ -1,10 +1,12 @@
 'use strict';
 
-(function handler() {
+window.addEventListener('load', handler);
+
+function handler() {
     var date = new Date();
     setTime(date);
     setTimeout(handler, 1000);
-})()
+}
 
 function setTime(date) {
     var time = [date.getHours(), date.getMinutes(), date.getSeconds()];
