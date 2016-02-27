@@ -1,12 +1,10 @@
 'use strict';
 
-window.addEventListener('DOMContentLoaded', handler);
-
-function handler() {
+(function handler() {
     var date = new Date();
     setTime(date);
     setTimeout(handler, 1000);
-}
+})()
 
 function setTime(date) {
     var time = [date.getHours(), date.getMinutes(), date.getSeconds()];
